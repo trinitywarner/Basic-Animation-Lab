@@ -1,0 +1,60 @@
+IDEA/ALTER
+
+def main():
+#i import * initialize
+import pygame
+pygame.init()
+
+#d display configuration
+screen gets pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Man I'm hungry"")
+
+#e entities
+background gets pygame.Surface(screen.get_size())
+background gets background.convert()
+background.fill((153, 126, 255))
+
+#a action (alter begins below)
+
+	#a: assign values to key variables
+clock = pygame.time.Clock()
+keepGoing = True
+
+	#l: main loop set-up
+while keepGoing:
+
+	#t: timer to set frame rate
+clock.tick(30)
+
+	#e: event handling
+for event in pygame.event.get():
+	if event.type == pygame.QUIT:
+		keepGoing = False
+
+	#r: refresh display
+screen.blit(background, (0, 0))
+pygame.display.flip()
+
+-----------
+
+#make a meal box 25 x 25
+    #box gets pygame.Surface((25,25))
+    #box gets box.converrt()
+    #box.fill((#, #, #))
+
+    #setting up the box variables
+    #box_x gets 0
+    #box_y gets 200
+
+    #action alter begins below
+
+        #e
+        #modify box value
+        #box_x += 5
+        #if box_x > screen.get.width():
+            #box_x gets 0
+
+        #r
+        #screen.blit(background, (0,0))
+        #screen.blit(box, (box_x, box_y))
+        #pygame.display.flip()
